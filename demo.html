@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>Untitled Document</title>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>demo</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="js/bootstrap-datetimepicker.min.js">
+	
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></head>
+  <body>
+  	<script type="text/javascript" src="js/bootstrap.js"></script>
+  	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>
+ <br/>
+  <br/>
+  <ul class="nav nav-tabs" style="width:800px;" >
+
+  <li class="active" ><a href="#">tab1</a></li>
+  <li><a href="#">tab2</a></li>
+  <li><a href="#">tab3</a></li>
+  <li><a href="#">tab4</a></li>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  
+	<form>	
+	<fieldset >
+	<legend>Quản lý hợp đồng</legend>
+	<table border="0" width="700px" align="center">
+	<tr>
+	<td>Tên khách hàng	</td>
+	<td><input type="text" name="name_customer"	/></td>
+	
+	</tr>
+	<tr>
+	<td>Địa chỉ	</td>
+	<td><textarea rows="1" cols="50"></textarea></td>
+	</tr>
+<tr>
+	<td>Số điện thoại	</td>
+	<td><input type="text" name="phone_num"	/></td>
+	</tr>
+<tr>
+	<td>Loại	</td>
+	<td><input type="radio" name="khachhang" value="khách hàng"> Đối tác
+	<input type="radio" name="khachhang" value="khách hàng"> Khách hàng</td>
+	</tr>
+<tr>
+	<td>Quốc gia	</td>
+	<td><select>
+	<option value="Chọn quốc gia">--Chọn quốc gia --</option>
+  <option value="Việt Nam" >Việt Nam</option>
+  <option value="Hàn Quốc">Hàn Quốc</option>
+  <option value="Nhật Bản">Nhật Bản</option>
+  <option value="Trung Quốc">Trung Quốc</option></select>
+  </td>
+	</tr>
+<tr>
+	<td>Ngày ký hợp đồng	</td>
+	<td>
+		 <div id="datetimepicker1" class="input-append date">
+		<input data-format="dd/MM/yyyy" type="text"></input>
+		<span class="add-on">
+		  <span class="glyphicon glyphicon-calendar"></span>
+		</span>
+	  </div>
+	
+	<script type="text/javascript">
+	  $(function() {
+		$('#datetimepicker1').datetimepicker({
+		  language: 'pt-BR'
+		});
+	  });
+	</script>
+	</td>
+	</tr>
+	
+<tr>
+	<td>Thông tin miêu tả	</td>
+	<td><textarea rows="4" cols="50"></textarea></td>
+	</tr>
+<tr>
+<td></td>
+<td>
+</p>
+<button  type="button" class="btn btn-primary btn-lg active" style="height:35px; width:75px; font-size:12px">SAVE</button>
+<button  type="button" class="btn btn-default btn-lg active" style="height:35px; width:75px; font-size:12px">RESET</button>
+</td>
+</tr>
+	</table>
+	<br />
+	</fieldset>
+	
+	</form>
+	</ul>
+	<!--
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed 
+    <script src="js/bootstrap.min.js"></script>
+	-->
+  </body>
+</html>
