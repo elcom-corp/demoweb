@@ -135,6 +135,19 @@
             <code>git diff &lt;nhánh_nguồn&gt; &lt;nhánh_mục_tiêu&gt;</code>
         </p>
     </div>
+	
+	   <a name="hints"></a>
+    <div class="scrollblock block-hints">
+        <h2>Viết lại lịch sử</h2>
+		<p>
+		Trong Git, có hai cách chính để tích hợp các thay đổi từ nhánh này vào nhánh khác: đó là merge và rebase.Tương tự với merge,cú pháp sử dụng rebase là <br/>
+		<code>git rebase &lt;nhánh&gt;</code>
+		<br/>
+		Lưu ý rằng snapshot được trỏ tới bởi commit cuối cùng, cho dù nó là kết quả của việc rebase hay merge, thì nó vẫn giống nhau - chỉ khác nhau về các bước thực hiện mà thôi.<br/> Quá trình rebase được thực hiện bằng cách thực hiện lại các thay đổi từ nhánh này qua nhánh khác theo thứ tự chúng đã được thực hiện, trong khi đó merge lại lấy hai điểm kết thúc và gộp chúng lại với nhau.
+		</p>
+        <!-- Nội đung  -->
+    </div>
+	
     <a name="tagging"></a>
     <div class="scrollblock block-tagging">
         <h2>gắn nhãn (tagging)</h2>
@@ -160,11 +173,7 @@
             <code>git reset --hard origin/master</code>
         </p>
     </div>
-    <a name="hints"></a>
-    <div class="scrollblock block-hints">
-        <h2>Viết lại lịch sử</h2>
-        <!-- Nội đung  -->
-    </div>
+ 
     <a name="resources"></a>
     <div class="scrollblock block-resources">
         <h2>các liên kết và tài nguyên </h2>
@@ -178,6 +187,6 @@
 			<li><a href="https://www.youtube.com/embed/mYjZtU1-u9Y?list=PL1F56EA413018EEE1">Video tutorial</a></li>	
 		</ul>
         <p></p>
-   
+   </div>
 
 </body></html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>demo</title>
+			  <link href="css/bootstrap.css" rel="stylesheet">
+			  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+			  <link href="css/elcom-platform.css" rel="stylesheet">
+	</head>	 
+	 	
+  <body>
+				<script src="js/widgets.js"></script>
+				<script src="js/jquery.js"></script>
+				<script src="js/bootstrap-tab.js"></script>
+ 
+     	<!--Bắt đầu tab-->
+			 <div id="UIViewTemplate_UITemplateContainer" class="uiTabPane uiTabNormal" style="margin:100px 100px;">
+				<ul id="myTab" class="nav nav-tabs">
+					<li class="active">
+						<a href="#tab-1" data-toggle="tab">Tab 1</a>
+					</li>
+					<li>
+						<a href="#tab-2" data-toggle="tab">Tab 2</a>
+					</li>
+					<li>
+						<a href="#tab-3" data-toggle="tab">Tab 3</a>
+					</li>
+					<li>
+						<a href="#tab-4" data-toggle="tab">Tab 4</a>
+					</li>
+				</ul>
+					<div id="myTabContent" class="tab-content">
+						<div id="tab-1" class="tab-pane fade in active ">
+							<p>
+								<form>	
+									<fieldset>
+									<legend> Quản lý hợp đồng </legend>
+									<table border="0" width="700px" align="center"  class="uiGrid table table-hover table-striped" >
+									<tr>
+									<td>Tên khách hàng	</td>
+									<td> <input class="input-xlarge" type="text" name="name_customer"/></td>
+									
+									</tr>
+									<tr>
+									<td>Địa chỉ	</td>
+									<td><textarea rows="1" class="input-xxlarge" cols="50"></textarea></td>
+									</tr>
+								<tr>
+									<td>Số điện thoại	</td>
+									<td><input class="input-xlarge" type="text" name="phone_num" /></td>
+									</tr>
+								<tr>
+									<td>Loại	</td>
+									<td><span class="uiRadio">
+											 <input type="radio"checked name="optionsRadios" id="optionsRadios1" value="dt">
+											<span> Đối tác</span>
+											</span>
+											<span class="uiRadio"> 
+											 <input type="radio" name="optionsRadios" id="optionsRadios2" value="kh">
+											<span> Khách hàng</span>
+										   </span></td>
+									</tr>
+								<tr>
+									<td>Quốc gia	</td>
+									<td><select class="btn dropdown-toggle">
+											<option value="choose_nation" style="text-align:center">-------------- Chọn mã quốc gia --------------</option>
+											<option value="VN">Việt Nam</option>
+											<option value="JP">Nhật Bản</option>
+											<option value="KR">Hàn Quốc</option>
+											<option value="Other_nation">Khác...</option>
+										</select>
+								  </td>
+									</tr>
+								<tr>
+									<td>Ngày ký hợp đồng	</td>
+									<td>
+										 <div id="" class="input-append">
+											<input data-format="dd/mm/yyyy" type="text" placeholder="_ _ / _ _ / _ _ _ _"></input>
+											<span class="add-on">
+												<i class="uiIconPLFCalendar uiIconPLFDarkGray"></i> 
+											</span>
+									</td>
+									</tr>
+									
+								<tr>
+									<td>Thông tin miêu tả	</td>
+									<td><textarea rows="4" class="input-xxlarge" cols="50"></textarea></td>
+									</tr>
+								<tr>
+								<td></td>
+								<td>
+								</p>
+								<button  type="button" class="btn btn-primary btn-lg active" style="height:35px; width:75px; font-size:12px">SAVE</button>
+								<button  type="button" class="btn btn-default btn-lg active" style="height:35px; width:75px; font-size:12px">RESET</button>
+								</td>
+								</tr>
+									</table>
+									<br />
+									</fieldset>
+									
+						</form>
+							</p>
+						</div>
+						<div id="tab-2" class="tab-pane fade ">
+							<p> Tab 2 chưa có gì </p>
+						</div>
+						<div id="tab-3" class="tab-pane fade ">
+							<p> abc</p>
+						</div>
+						<div id="tab-4" class="tab-pane fade ">
+							<p> def</p>
+						</div>
+					</div>
+				</div>
+  </body>
+
+</html>
